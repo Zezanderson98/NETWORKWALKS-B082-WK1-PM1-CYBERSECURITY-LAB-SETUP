@@ -97,13 +97,7 @@ Additional target machines can be added to the same virtual network in future pr
 
 ---
 
-# 🔐 Cybersecurity Lab Environment Setup
-**Course Tag:** TASK WK1-PM1  
-**Academy Module:** Networkwalks Academy Portfolio  
-**Developer:** <!-- Type your full name here -->  
-**Intern Identifier:** <!-- Type your student ID here -->  
 
----
 
 ## 📌 Project Overview
 
