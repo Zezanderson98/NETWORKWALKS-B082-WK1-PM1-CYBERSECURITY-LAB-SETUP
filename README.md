@@ -70,8 +70,33 @@ It can be used for activities such as:
 ---
 
 ## 🏗️ Lab Architecture
++---------------------------------------------------------------------------------+
 
-![](1-screenshot-title-image.png)
+| PHYSICAL HOST LAYER (My Computer OS: Windows 10 Pro)                                |
+|                                                                                 |
+|   +-------------------------------------------------------------------------+   |
+|   | HYPERVISOR VIRTUALIZATION KERNEL (Oracle VirtualBox 7.x Platform)       |   |
+|   |                                                                         |   |
+|   |   +-----------------------------------------------------------------+   |   |
+|   |   | LAB ISOLATION LAYER (Custom NAT Network Segment)                |   |   |
+|   |   | Subnet Address Domain Range: 10.0.0.0/24                        |   |   |
+|   |   |                                                                 |   |   |
+|   |   |   +--------------------------+                                  |   |   |
+|   |   |   | ATTACK ROUTING INTERFACE |                                  |   |   |
+|   |   |   | Node: Kali Linux VM      |                                  |   |   |
+|   |   |   | Hardcoded IP: 10.0.0.2   |                                  |   |   |
+|   |   |   +------------+-------------+                                  |   |   |
+|   |   |                |                                                |   |   |
+|   |   |                | (Sends Security Testing Traffic safely)        |   |   |
+|   |   |                v                                                |   |   |
+|   |   |   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +   |   |   |
+|   |   |   : FUTURE TARGET POOL SLOTS (DHCP Lease: 10.0.0.3 - .99)   :   |   |   |
+|   |   |   : [Windows 10/11 targets / Vulnerable Linux Servers]      :   |   |   |
+|   |   |   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +   |   |   |
+|   |   +-----------------------------------------------------------------+   |   |
+|   +-------------------------------------------------------------------------+   |
++---------------------------------------------------------------------------------+
+
 
 
 Additional target machines can be added to the same virtual network in future projects.
