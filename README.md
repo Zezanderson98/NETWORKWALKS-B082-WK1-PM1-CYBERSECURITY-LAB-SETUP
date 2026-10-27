@@ -185,11 +185,18 @@ Adapter Type: Intel PRO/1000 MT Desktop
 <img width="1366" height="768" alt="smart lot" src="https://github.com/user-attachments/assets/22987d73-7f57-499f-941b-3d7bee2644fa" />
 
 
+
+
+
+
 The VM was allocated:
 
 ```text
 RAM: 2048 MB
 ```
+<img width="1366" height="768" alt="lihjy" src="https://github.com/user-attachments/assets/dead712b-c2b8-4270-a4e1-2680321538b8" />
+
+
 
 
 
