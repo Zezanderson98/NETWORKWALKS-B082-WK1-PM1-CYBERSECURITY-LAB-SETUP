@@ -175,10 +175,25 @@ I pulled down the pre-configured system appliance instance package straight from
 *   **Attacker Distribution Image Link:** [Official Kali Linux Pre-Built VM Download](https://kali.org)
 
 ### My Applied Machine Settings:
-*   **Network Mapping:** Attached to `NAT Network` using the newly defined `NatNetwork` block.
-*   **Adapter Profile:** `Intel PRO/1000 MT Desktop`
-*   **Guest Additions:** Configured **Bidirectional** setting flags for clipboard data sharing paths and drag-and-drop operations.
-*   **FileSystem Shared Folders:** Mounted a direct path connection mapping my physical machine's `/downloads` folder into the virtual machine's local tree structure.
+ ```text
+Adapter 1
+Attached to: NAT Network
+Network:     NatNetwork
+Adapter Type: Intel PRO/1000 MT Desktop
+```
+
+<img width="1366" height="768" alt="smart lot" src="https://github.com/user-attachments/assets/22987d73-7f57-499f-941b-3d7bee2644fa" />
+
+
+The VM was allocated:
+
+```text
+RAM: 2048 MB
+```
+
+
+
+  **FileSystem Shared Folders:** Mounted a direct path connection mapping my physical machine's `/downloads` folder into the virtual machine's local tree structure.
 
 > 🖼️ **My VM Settings Dashboard:**  
 > <!-- Place a screenshot of your specific VM Settings panels here, showing Advanced Clipboard features and network attachments. -->
