@@ -224,7 +224,7 @@ To prevent dynamic lease changes during successive vulnerability evaluations, I 
 *   **Primary DNS Resolver Server:** `8.8.8.8`
 
 > 🖼️ **My Manual Connection Modification Screenshot:**  
-> <!-- Place a screenshot here showing YOUR manual network connection modifications layout open inside Kali Linux. -->
+<img width="1366" height="662" alt="flys of kali config" src="https://github.com/user-attachments/assets/9b877f7e-f286-4cc1-adce-2503766d2e4f" />
 
 ---
 
