@@ -162,6 +162,7 @@ I initialized a specialized isolated virtual local area network inside the hyper
 > <!-- Place your VirtualBox NATNetwork preferences screenshot here. Keep your file path clean, e.g., ![](images/my_network_setup.png) -->
 
 A **NAT Network** was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity.
+
 This will allow future attacker and target VMs to communicate within the lab.
 
 
