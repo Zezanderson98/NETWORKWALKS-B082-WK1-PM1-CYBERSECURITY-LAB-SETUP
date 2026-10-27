@@ -70,32 +70,6 @@ It can be used for activities such as:
 ---
 
 ## 🏗️ Lab Architecture
-+---------------------------------------------------------------------------------+
-
-| PHYSICAL HOST LAYER (My Computer OS: Windows 10 Pro)                                |
-|                                                                                 |
-|   +-------------------------------------------------------------------------+   |
-|   | HYPERVISOR VIRTUALIZATION KERNEL (Oracle VirtualBox 7.x Platform)       |   |
-|   |                                                                         |   |
-|   |   +-----------------------------------------------------------------+   |   |
-|   |   | LAB ISOLATION LAYER (Custom NAT Network Segment)                |   |   |
-|   |   | Subnet Address Domain Range: 10.0.0.0/24                        |   |   |
-|   |   |                                                                 |   |   |
-|   |   |   +--------------------------+                                  |   |   |
-|   |   |   | ATTACK ROUTING INTERFACE |                                  |   |   |
-|   |   |   | Node: Kali Linux VM      |                                  |   |   |
-|   |   |   | Hardcoded IP: 10.0.0.2   |                                  |   |   |
-|   |   |   +------------+-------------+                                  |   |   |
-|   |   |                |                                                |   |   |
-|   |   |                | (Sends Security Testing Traffic safely)        |   |   |
-|   |   |                v                                                |   |   |
-|   |   |   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +   |   |   |
-|   |   |   : FUTURE TARGET POOL SLOTS (DHCP Lease: 10.0.0.3 - .99)   :   |   |   |
-|   |   |   : [Windows 10/11 targets / Vulnerable Linux Servers]      :   |   |   |
-|   |   |   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +   |   |   |
-|   |   +-----------------------------------------------------------------+   |   |
-|   +-------------------------------------------------------------------------+   |
-+---------------------------------------------------------------------------------+
 
 
 
@@ -173,7 +147,8 @@ I deployed the host virtualization hypervisor platform to manage local sandbox o
 
 *   **Hypervisor Component Link:** [Official Oracle VirtualBox Downloads Hub](https://virtualbox.org)
 
----
+<img width="1366" height="768" alt="Oracle VirtualBox" src="https://github.com/user-attachments/assets/a46d707c-0cd8-4b9d-bb62-71a59b113cb6" />
+
 
 ## Step 3. Create the NAT Network
 I initialized a specialized isolated virtual local area network inside the hypervisor environment interface.
