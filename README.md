@@ -250,7 +250,7 @@ As documented in the step-by-step progress below, I initialized the snapshot req
 
 
 
-> 🖼️ **My Verification Point (Snapshot Saved Tree Log):**  
+> 🖼️ **My Verification Point (Snapshot Saved):**  
 <img width="1366" height="768" alt="snapshot taken really hoho" src="https://github.com/user-attachments/assets/36f1c27c-187d-4f43-bca1-c9e906136e01" />
 
 
