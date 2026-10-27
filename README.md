@@ -128,19 +128,6 @@ The main objectives of this project are to:
 
 ---
 
-## ⚙️ Lab Configuration
-
-*   **Host Operating System:** <!-- Type your host OS version here, e.g., Windows 11 Pro -->
-*   **Host System Memory:** <!-- Type your actual host RAM here, e.g., 16 GB DDR4 -->
-*   **Processor Engine:** <!-- Type your CPU model here, e.g., Intel Core i7-12700H -->
-*   **Hypervisor Engine:** VirtualBox 7.x
-*   **Security Distribution OS:** Kali Linux (Pre-built VM Instance)
-*   **Virtual Machine Memory:** <!-- Type the RAM capacity assigned to your VM, e.g., 2048 MB -->
-*   **Virtual Network Array:** NAT Network (`NatNetwork`)
-*   **Subnet CIDR Range:** `10.0.0.0/24`
-*   **Static Endpoint Assignment:** `10.0.0.2/24`
-*   **Default System Gateway:** `10.0.0.1`
-*   **Target DNS Nameserver:** `8.8.8.8`
 
 ---
 
