@@ -226,7 +226,15 @@ To prevent dynamic lease changes during successive vulnerability evaluations, I 
 > 🖼️ **My Manual Connection Modification Screenshot:**  
 <img width="1366" height="662" alt="flys of kali config" src="https://github.com/user-attachments/assets/9b877f7e-f286-4cc1-adce-2503766d2e4f" />
 
----
+
+
+> 🖼️ **My Manual Connection Verification Proof:**  
+> This live capture confirms full internet connectivity inside my Kali Linux desktop environment. After saving my static parameters, I opened the native Firefox ESR browser and successfully loaded the external `networkwalks.com` web portal via my custom NATNetwork gateway interface:
+<img width="1366" height="662" alt="andybaba o" src="https://github.com/user-attachments/assets/6bf57de6-9b1e-4e1e-beaf-c05da15180aa" />
+
+
+
+
 
 ## Step 6. Create a Clean VM Snapshot
 Once the network installation framework verified successfully, I immediately generated a pristine environment state snapshot capture point.
