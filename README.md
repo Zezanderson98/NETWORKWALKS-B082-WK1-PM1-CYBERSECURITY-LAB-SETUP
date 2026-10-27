@@ -159,7 +159,7 @@ I initialized a specialized isolated virtual local area network inside the hyper
 *   **IPv6 Protocol Paths:** Disabled
 
 > 🖼️ **My Custom NAT Network Interface Config:**  
-> <!-- Place your VirtualBox NATNetwork preferences screenshot here. Keep your file path clean, e.g., ![](images/my_network_setup.png) -->
+  <img width="1366" height="768" alt="NatNetwork" src="https://github.com/user-attachments/assets/3753757f-e073-457c-9ced-e4c8eaa0e249" />
 
 A **NAT Network** was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity.
 
