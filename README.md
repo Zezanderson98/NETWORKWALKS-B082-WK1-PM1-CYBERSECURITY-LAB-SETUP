@@ -235,13 +235,24 @@ To prevent dynamic lease changes during successive vulnerability evaluations, I 
 
 
 
-
 ## Step 6. Create a Clean VM Snapshot
-Once the network installation framework verified successfully, I immediately generated a pristine environment state snapshot capture point.
 
-*   **My Saved Milestone Label Name:** <!-- Type what you actually named your snapshot, e.g., Clean Kali - Network Setup -->
+Once my manual network parameters were written and internet reachability was confirmed, I powered down the virtual instance to capture a permanent, clean environment baseline.
 
-This snapshot functions as the stable baseline configuration marker for my security testing lab environment, ensuring I can restore the system parameters instantly if any future tasks damage system dependencies.
+*   **Snapshot Designation Name:** `Clean Kali - Network Setup`
+*   **Detailed Snapshot Log Description:** `A Clean Network Setup of Kali Linux (Attac&ker VM)`
+
+As documented in the step-by-step progress below, I initialized the snapshot request within the VirtualBox manager screen panel. This saved execution checkpoint serves as my core system fallback profile. If a subsequent cyber security scanning tool or aggressive vulnerability payload accidentally breaks my network stack dependencies in a future exercise, I can instantly roll back the state parameters to this exact pristine milestone.
+
+> 🖼️ **My In-Progress Configuration Point (Creating the State Capture):**  
+
+<img width="1366" height="768" alt="snapshot of kali linux" src="https://github.com/user-attachments/assets/a831ed30-c199-478a-8c13-54ebceaa6fc0" />
+
+
+
+> 🖼️ **My Verification Point (Snapshot Saved Tree Log):**  
+<img width="1366" height="768" alt="snapshot taken really hoho" src="https://github.com/user-attachments/assets/36f1c27c-187d-4f43-bca1-c9e906136e01" />
+
 
 ---
 
