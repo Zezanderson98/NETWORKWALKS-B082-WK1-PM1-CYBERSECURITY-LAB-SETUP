@@ -237,7 +237,7 @@ To prevent dynamic lease changes during successive vulnerability evaluations, I 
 
 ## Step 6. Create a Clean VM Snapshot
 
-Once my manual network parameters were written and internet reachability was confirmed, I powered down the virtual instance to capture a permanent, clean environment baseline.
+Once my manual network parameters were written and internet reachability was confirmed, I powered off the Kali Linux Virtual Machine to capture a permanent, clean environment baseline.
 
 *   **Snapshot Designation Name:** `Clean Kali - Network Setup`
 *   **Detailed Snapshot Log Description:** `A Clean Network Setup of Kali Linux (Attac&ker VM)`
