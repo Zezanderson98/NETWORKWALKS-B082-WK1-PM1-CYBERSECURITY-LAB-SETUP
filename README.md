@@ -137,7 +137,7 @@ The main objectives of this project are to:
 Before setting up the virtual machine platform, I configured the underlying Windows environment with the proper prerequisites to ensure core virtualization frameworks compile successfully without throwing runtime error flags.
 
 *   **Microsoft Visual C++ Redistributable Package:** Installed the visual runtime engine required by VirtualBox to run stable kernel tasks on Windows hosts.
-    *   [Official Microsoft VC++ Redistributable Direct Download (x64)](https://aka.ms/vc14/vc_redist.x64.exe)
+    *   [Official Microsoft VC++ Redistributable Direct Download (x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 *   **7-Zip File Extraction Utility:** Installed the file manager engine to safely open compressed archives.
     *   [Official 7-Zip Utility Download](https://7-zip.org)
 
