@@ -174,6 +174,10 @@ I pulled down the pre-configured system appliance instance package straight from
 
 *   **Attacker Distribution Image Link:** [Official Kali Linux Pre-Built VM Download](https://kali.org)
 
+
+
+<img width="1366" height="662" alt="kalibabaaa" src="https://github.com/user-attachments/assets/f54a56a5-5784-479a-9125-472568b2d9e9" />
+
 ### My Applied Machine Settings:
  ```text
 Adapter 1
