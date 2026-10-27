@@ -317,3 +317,168 @@ LinkedIn: [https://www.linkedin.com/in/anderson-edaiyo-bab74117b)
 ## 📌 Project Information
 
 **Program Name:** Cybersecurity at Networkwalks | **Week:** 01 | **Project:** Cybersecurity & Pentesting Lab Setup | **Repository:** GitHub
+
+# 📂 Engineering Journal: Custom Security Sandbox Deployment
+**Project Reference:** TASK WK1-PM1  
+**Curriculum Stream:** Networkwalks Portfolio Matrix  
+**Systems Engineer:** <!-- Input your full name here -->  
+**Intern Identifier:** <!-- Input your student token here -->  
+
+---
+
+## 📝 1. Individual Environmental Scope
+
+The objective of this engineering task was to initialize an out-of-band virtual workspace dedicated to secure software security validation. By separating guest host networking components away from my main physical desktop setup, I can safely run local network diagnostic routines while ensuring the guest terminal retains outbound internet transit routing capabilities.
+
+---
+
+## ⚙️ 2. Physical Host Resource Inventory
+
+Prior to downloading software packages or configuring virtual adapters, I audited my local computer to confirm it possessed adequate hardware capability to handle multi-instance virtualization without dropping connection tables:
+
+*   **Processor Engine:** <!-- Type your specific CPU model here, e.g., Intel Core i5-11400H -->
+*   **Volatile Memory Available:** <!-- Type your host RAM size here, e.g., 16 GB DDR4 -->
+*   **Solid State Storage Space:** <!-- Type your drive capacity here, e.g., 1TB NVMe M.2 SSD -->
+*   **Host Environment OS:** <!-- Type your base operating system version here, e.g., Windows 11 Home -->
+
+---
+
+## 🏗️ 3. Environment Architecture Layout
+
+To establish a clear structural design of my localized testing environment before carrying out the configuration tasks, I referenced and tracked the baseline operational blueprint layout below:
+
+📸 **My Screen Evidence (Topology Diagram):**  
+<!-- Insert your personal screen capture of the network diagram layout here. Keep your file path clean, e.g., ![](images/my_network_diagram.png) -->
+
+---
+
+## 📦 4. Software Source & System Prerequisites
+
+To ensure proper deployment validation and avoid installation failure flags due to missing dynamic link libraries (.dll), I verified and installed all baseline system runtimes before initializing the hypervisor engine.
+
+### Prerequisites & Dependencies
+*   **Data Extraction Utility:** Deployed the open-source 7-Zip archiver engine to manage `.7z` virtual hardware images.
+    *   [Official 7-Zip Download Engine](https://7-zip.org)
+*   **Windows Subsystem Runtime Dependency:** Installed the **Microsoft Visual C++ 2019/2022 Redistributable Package (x64)**. This runtime environment is strictly required by VirtualBox 7.x to execute system virtualization hooks on a Windows host OS.
+    *   [Official Microsoft VC++ Redistributable Direct Link](https://aka.ms)
+
+### Primary Virtualization Platforms
+*   **Hypervisor Kernel:** Selected Oracle VirtualBox 7.x as the core bare-metal type-2 management platform.
+    *   [Official Oracle VirtualBox Downloads Hub](https://virtualbox.org)
+*   **Offensive Guest Workspace:** Sourced the pre-packaged VirtualBox Open Virtualization Archive (`.ova`) image directly from the official Kali repository.
+    *   [Official Kali Linux VM Images Hub](https://kali.org)
+
+---
+
+## 🌐 5. Custom Segment Configuration (NATNetwork)
+
+Instead of utilizing standard bridging nodes, I built a dedicated network virtualization layer to safely keep all lab traffic internal to this specific network card segment.
+
+> ### Subnet Configurations Applied:
+> - **Virtual Network Label:** `NatNetwork`
+> - **Subnet Range:** `10.0.0.0/24`
+> - **Local IP Distribution (DHCP):** Enabled
+> - **IPv6 Global Unicast Paths:** Disabled
+
+📸 **My Screen Evidence (NAT Prefs Panel):**  
+<!-- Insert your personal snapshot of the VirtualBox network preferences dashboard here. Example: ![](images/my_network_properties.png) -->
+
+---
+
+## 🐉 6. Attack Terminal Provisioning (Kali Linux)
+
+I deployed the official Kali Linux virtual image onto the designated segment and modified the virtual hardware containers to permit direct data sharing workflows.
+
+*   **System RAM Provisioned:** <!-- Type the RAM capacity assigned to your VM, e.g., 2048 MB -->
+*   **Network Mapping Profile:** Attached to: `NAT Network` | Name: `NatNetwork` | Adapter: `Intel PRO/1000 MT Desktop`
+*   **Runtime File Shares:** Enabled bidirectional system clipboard tracking alongside shared filesystem directory bindings pointing to my local host machine's `/downloads` partition directory.
+
+📸 **My Screen Evidence (VM Advanced Settings):**  
+<!-- Insert a screenshot showing your unique Kali Linux VirtualBox configuration profile here. -->
+
+---
+
+## 🎛️ 7. Static Network Hardcoding
+
+To maintain structural consistency for subsequent tracking and mapping tasks, I manually locked down the interface adapters inside the virtual environment rather than leaving them dynamic:
+
+```text
+Target Node Address:  10.0.0.2
+Subnet Segment Mask:  255.255.255.0 (/24)
+Local Network Gateway: 10.0.0.1
+Primary DNS Resolver: 8.8.8.8
+```
+
+📸 **My Screen Evidence (Manual IPv4 Panel):**  
+<!-- Insert a screenshot here showing YOUR manual network connection modifications layout open inside Kali Linux. -->
+
+---
+
+## 🔬 8. Verification and Local Interface Checks
+
+To prove the manual configuration updates were written correctly to the network controller, I initiated a series of diagnostic terminal commands inside the Linux environment.
+
+<!-- 
+👉 INSTRUCTION FOR MAXIMUM portfolio AUTHENTICITY: 
+Open your live terminal, execute these routines, and copy/paste your actual textual output inside the boxes below!
+-->
+
+### Network Interface Readout:
+```bash
+ip address show eth0
+```
+```text
+<!-- PASTE THE EXACT LIVE READOUT FROM YOUR OWN KALI LINUX TERMINAL SCREEN HERE -->
+```
+
+### End-to-End Route Validation:
+```bash
+ping -c 4 8.8.8.8
+ping -c 4 google.com
+```
+```text
+<!-- PASTE THE RAW ICMP RESULTS FROM YOUR SCREEN HERE TO SHOW ZERO PACKET LOSS -->
+```
+
+📸 **My Screen Evidence (Terminal Run):**  
+<!-- Insert a screenshot of your active terminal window capturing the successful ping readouts here. -->
+
+---
+
+## 🩹 9. Logged Operational Obstacles & Fixes
+
+<!-- 
+👉 REMINDER:
+State the real, organic typos or errors you hit today in your own words.
+-->
+
+### Real-World Bug Encountered:
+<!-- Describe your personal issue here. Example: "Upon updating the interface settings to manual mode, my terminal dropped all outward connections and couldn't resolve external web paths." -->
+
+### Resolution Process Implemented:
+<!-- Explain how you manually brought it back up. Example: "I entered the terminal interface and appended the recommended NetworkManager modification arguments to clear the DAD threshold timeout block, cycled the connection parameters, and restored operational continuity." -->
+
+```bash
+sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+sudo nmcli connection down "Wired connection 1"
+sudo nmcli connection up "Wired connection 1"
+```
+
+---
+
+## 💾 10. Safe State Recovery (Baseline Snapshots)
+
+To establish a clear recovery path prior to executing potential vulnerability assessments down the road, I finalized a full system point snapshot inside the hypervisor architecture dashboard.
+
+*   **My Custom Snapshot Identifier Tag:** <!-- Type what you personally named the system snapshot point, e.g., Wk1_Fresh_Deployment -->
+
+📸 **My Screen Evidence (Hypervisor Snapshot Manager):**  
+<!-- Insert a snapshot of your VirtualBox snapshot workspace layout highlighting your saved milestone tree. -->
+
+---
+
+## ⚖️ 11. Repository Licensing
+
+This deployment documentation and project log tracking are distributed openly under the terms of the MIT License framework. Check the root level `LICENSE` document file for details.
+
+
