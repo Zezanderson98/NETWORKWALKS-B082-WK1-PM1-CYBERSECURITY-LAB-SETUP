@@ -200,10 +200,14 @@ RAM: 2048 MB
 
 
 
+  
+  
+  
+  
   **FileSystem Shared Folders:** Mounted a direct path connection mapping my physical machine's `/downloads` folder into the virtual machine's local tree structure.
 
-> 🖼️ **My VM Settings Dashboard:**  
-> <!-- Place a screenshot of your specific VM Settings panels here, showing Advanced Clipboard features and network attachments. -->
+<img width="1366" height="768" alt="shared fold" src="https://github.com/user-attachments/assets/d161de62-e5ce-4cd8-8518-86404f7713db" />
+
 
 ---
 
