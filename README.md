@@ -97,99 +97,128 @@ Additional target machines can be added to the same virtual network in future pr
 
 ---
 
+# 🔐 Cybersecurity Lab Environment Setup
+**Course Tag:** TASK WK1-PM1  
+**Academy Module:** Networkwalks Academy Portfolio  
+**Developer:** <!-- Type your full name here -->  
+**Intern Identifier:** <!-- Type your student ID here -->  
+
+---
+
+## 📌 Project Overview
+
+This project focuses on setting up a **virtual cybersecurity and penetration-testing laboratory** using VirtualBox and Kali Linux.
+
+The purpose of the lab is to create a controlled environment where cybersecurity tools, network scanning, reconnaissance, vulnerability assessment, and other security-testing activities can be performed safely and repeatedly.
+
+The lab is configured on a private virtual network so that additional machines can be added later and used as targets for authorized security testing.
+
+---
+
+## 🎯 Objectives
+
+The main objectives of this project are to:
+- Install required system dependencies and hypervisor layers.
+- Create a private **NAT Network** for the cybersecurity lab.
+- Install and configure a Kali Linux virtual machine.
+- Set up a consistent, manual IP address configuration.
+- Verify end-to-end network connectivity and internet reachability.
+- Capture a baseline system state snapshot for recovery.
+
+---
+
+## 🏗️ Lab Architecture
+
+📸 **My Architecture Blueprint:**  
+<!-- Insert your personal screen capture of the network diagram layout here. Keep your file path clean, e.g., ![](images/my_network_diagram.png) -->
+
+---
+
+## ⚙️ Lab Configuration
+
+*   **Host Operating System:** <!-- Type your host OS version here, e.g., Windows 11 Pro -->
+*   **Host System Memory:** <!-- Type your actual host RAM here, e.g., 16 GB DDR4 -->
+*   **Processor Engine:** <!-- Type your CPU model here, e.g., Intel Core i7-12700H -->
+*   **Hypervisor Engine:** VirtualBox 7.x
+*   **Security Distribution OS:** Kali Linux (Pre-built VM Instance)
+*   **Virtual Machine Memory:** <!-- Type the RAM capacity assigned to your VM, e.g., 2048 MB -->
+*   **Virtual Network Array:** NAT Network (`NatNetwork`)
+*   **Subnet CIDR Range:** `10.0.0.0/24`
+*   **Static Endpoint Assignment:** `10.0.0.2/24`
+*   **Default System Gateway:** `10.0.0.1`
+*   **Target DNS Nameserver:** `8.8.8.8`
+
+---
+
 # 🪜 Lab Setup Procedure
 
-## Step 1. Install 7-Zip
+## Step 1. Install System Dependencies & 7-Zip
+Before setting up the virtual machine platform, I configured the underlying Windows environment with the proper prerequisites to ensure core virtualization frameworks compile successfully without throwing runtime error flags.
 
-7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
-
-**Tool:** 7-Zip
+*   **Microsoft Visual C++ Redistributable Package:** Installed the visual runtime engine required by VirtualBox to run stable kernel tasks on Windows hosts.
+    *   [Official Microsoft VC++ Redistributable Direct Download (x64)](https://aka.ms)
+*   **7-Zip File Extraction Utility:** Installed the file manager engine to safely open compressed archives.
+    *   [Official 7-Zip Utility Download](https://7-zip.org)
 
 ---
 
 ## Step 2. Install VirtualBox
+I deployed the host virtualization hypervisor platform to manage local sandbox operating system images.
 
-VirtualBox was installed as the hypervisor.
+*   **Hypervisor Component Link:** [Official Oracle VirtualBox Downloads Hub](https://virtualbox.org)
 
 ---
 
 ## Step 3. Create the NAT Network
+I initialized a specialized isolated virtual local area network inside the hypervisor environment interface.
 
-A dedicated NAT Network was created in VirtualBox.
+*   **Network Name:** `NatNetwork`
+*   **IPv4 Subnet Prefix:** `10.0.0.0/24`
+*   **DHCP Allocator Engine:** Enabled
+*   **IPv6 Protocol Paths:** Disabled
 
-Configuration:
-Network Name: NatNetwork
-IPv4 Prefix:  10.0.0.0/24
-DHCP:         Enabled
-IPv6:         Disabled
+> 🖼️ **My Custom NAT Network Interface Config:**  
+> <!-- Place your VirtualBox NATNetwork preferences screenshot here. Keep your file path clean, e.g., ![](images/my_network_setup.png) -->
 
-![](2-screenshot-network-settings-1.png)
-
-A **NAT Network** was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity.
-
-This will allow future attacker and target VMs to communicate within the lab.
-
+This specific network architecture was chosen to ensure multiple security boxes launched later can smoothly map inter-guest connectivity strings while sharing a secure outbound gateway bridge to the internet.
 
 ---
 
 ## Step 4. Import Kali Linux
+I pulled down the pre-configured system appliance instance package straight from the official distribution mirrors and imported the image into the VirtualBox architecture array.
 
-The Kali Linux virtual machine was downloaded from the official Kali Linux website and imported into VirtualBox.
+*   **Attacker Distribution Image Link:** [Official Kali Linux Pre-Built VM Download](https://kali.org)
 
-The VM network adapter was configured as follows:
+### My Applied Machine Settings:
+*   **Network Mapping:** Attached to `NAT Network` using the newly defined `NatNetwork` block.
+*   **Adapter Profile:** `Intel PRO/1000 MT Desktop`
+*   **Guest Additions:** Configured **Bidirectional** setting flags for clipboard data sharing paths and drag-and-drop operations.
+*   **FileSystem Shared Folders:** Mounted a direct path connection mapping my physical machine's `/downloads` folder into the virtual machine's local tree structure.
 
-```text
-Adapter 1
-Attached to: NAT Network
-Network:     NatNetwork
-Adapter Type: Intel PRO/1000 MT Desktop
-```
-
-The VM was allocated:
-
-```text
-RAM: 2048 MB
-```
-![](3-screenshot-kali-linux.png)
-A shared folder was also configured for transferring required files between the host operating system and the Kali VM.
-
-
+> 🖼️ **My VM Settings Dashboard:**  
+> <!-- Place a screenshot of your specific VM Settings panels here, showing Advanced Clipboard features and network attachments. -->
 
 ---
 
 ## Step 5. Configure the Kali Linux Network
+To prevent dynamic lease changes during successive vulnerability evaluations, I manually changed the Linux configuration setup profiles from automated tracking to hardcoded static endpoints.
 
-The Kali Linux network configuration was checked and configured with a consistent IPv4 address.
+*   **Manual Assigned Address:** `10.0.0.2`
+*   **Network Segment Mask:** `255.255.255.0`
+*   **Upstream Gateway Pathway:** `10.0.0.1`
+*   **Primary DNS Resolver Server:** `8.8.8.8`
 
-Example configuration:
-
-```text
-IP Address: 10.0.0.2
-Subnet Mask: 255.255.255.0
-Gateway: 10.0.0.1
-DNS: 8.8.8.8
-```
-
-A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
-
-![](4-screenshot-kali-network-settings.png)
+> 🖼️ **My Manual Connection Modification Screenshot:**  
+> <!-- Place a screenshot here showing YOUR manual network connection modifications layout open inside Kali Linux. -->
 
 ---
 
 ## Step 6. Create a Clean VM Snapshot
+Once the network installation framework verified successfully, I immediately generated a pristine environment state snapshot capture point.
 
-After completing the initial configuration, a VirtualBox snapshot was created.
+*   **My Saved Milestone Label Name:** <!-- Type what you actually named your snapshot, e.g., Clean Kali - Network Setup -->
 
-Example snapshot name:
-
-```text
-Clean Kali - Network Setup
-```
-
-The snapshot represents the clean baseline of the laboratory.
-
-If a future exercise changes or damages the VM configuration, the machine can be restored to this baseline.
-
+This snapshot functions as the stable baseline configuration marker for my security testing lab environment, ensuring I can restore the system parameters instantly if any future tasks damage system dependencies.
 
 ---
 
@@ -204,55 +233,54 @@ If a future exercise changes or damages the VM configuration, the machine can be
 | 🧰 Verify Nmap                | `nmap --version`                | Nmap version displayed          |
 | 🔄 Verify snapshot            | Restore snapshot and run `ip a` | Baseline configuration restored |
 
-### Example Results
+### My Shell Console Diagnostics Readout:
+<!-- 
+👉 INSTRUCTION: 
+Run these commands in your live terminal, copy the actual text output from your screen, and paste it inside the code blocks below.
+-->
 
-```text
-IP Address:
-10.0.0.2/24
-
-Gateway:
-10.0.0.1
-
-DNS:
-8.8.8.8
+```bash
+# Diagnostic Run A: Active IP Verification
+ip address show eth0
 ```
+```text
+<!-- PASTE THE EXACT, REAL TEXT OUTPUT FROM YOUR OWN KALI TERMINAL HERE -->
+```
+
+```bash
+# Diagnostic Run B: Outbound Data Bridge Audit
+ping -c 4 8.8.8.8
+ping -c 4 google.com
+```
+```text
+<!-- PASTE THE REAL PING PRINTOUT FROM YOUR SCREEN HERE SHOWING 0% PACKET LOSS -->
+```
+
+> 🖼️ **My Verified Diagnostic Terminal Snapshot:**  
+> <!-- Place a screenshot of your live terminal window displaying these successful commands here. -->
 
 ---
 
 # 🐞 Problems Encountered & Solutions
 
-Documenting problems is an important part of the project.
+<!-- 
+👉 INSTRUCTION:
+Write 2-3 short sentences about what actually went wrong during your day. Did your internet disconnect? Did you get a BIOS error? Did you misspell a network name? Write it completely in your own words.
+-->
 
-## Problem 1. Internet Connectivity After Static IP Configuration
+### Technical Anomaly Encountered:
+<!-- Describe your problem here. Example: "When I saved my manual settings, my upper taskbar internet icon completely disappeared and I couldn't reach any website." -->
 
-After manually configuring the IPv4 settings, Internet connectivity may fail depending on the Kali/NetworkManager configuration.
-
-One workaround used during this lab was:
-
+### Resolution Process Executed:
+<!-- Explain how you solved it. -->
 ```bash
 sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+sudo nmcli connection down "Wired connection 1"
+sudo nmcli connection up "Wired connection 1"
 ```
-
-The network connection was then restarted/rebooted and connectivity was tested again.
-
-> **Important:** Network interface and connection names may differ between systems. Students should first identify their actual connection name before running an `nmcli` command.
 
 ---
 
-## Problem 2. VirtualBox VT-x / Virtualization Error
-
-The VM initially failed to start because hardware virtualization was disabled in the system firmware/BIOS.
-
-The issue was resolved by:
-
-1. Restarting the computer.
-2. Entering BIOS/UEFI settings.
-3. Enabling Intel VT-x / hardware virtualization.
-4. Saving the configuration.
-5. Restarting the computer.
-6. Starting the Kali VM again.
-
-After enabling virtualization, the VM started successfully.
 
 
 ---
