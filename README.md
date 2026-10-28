@@ -256,16 +256,16 @@ As documented in the step-by-step progress below, I initialized the snapshot req
 
 ---
 
-# 🔎 Lab Verification
+| ✅ Test | 🧾 Command / Action | 🎯 Live Result Observations |
+| :--- | :--- | :--- |
+| **🌐 Check IP Address** | `ip a` | **SUCCESSFUL** (Correct `10.0.0.2` address profile displayed) |
+| **📡 Test Gateway** | `ping 10.0.0.1` | **FAILED** (Returned host unreachable / packets dropped) |
+| **🌍 Test Internet Traffic** | Open Firefox Browser | **SUCCESSFUL** (Successfully accessed and loaded `networkwalks.com`) |
+| **🌍 Test Raw Link IP** | `ping 8.8.8.8` | **FAILED** (Returned host unreachable / packets dropped) |
+| **🔎 Test DNS Resolution** | `nslookup networkwalks.com` | **FAILED** (Command-line name translation timed out) |
+| **🧰 Verify Security Tools** | `nmap --version` | **SUCCESSFUL** (Nmap utility layer version engine displayed) |
+| **🔄 Verify Snapshot State** | Restore VM & run `ip a` | **SUCCESSFUL** (Baseline configuration state restored cleanly) |
 
-| ✅ Test                        | 🧾 Command                      | 🎯 Expected Result              |
-| ----------------------------- | ------------------------------- | ------------------------------- |
-| 🌐 Check IP address           | `ip a`                          | Correct Kali IP displayed       |
-| 📡 Test gateway               | `ping 10.0.0.1`                 | Successful replies              |
-| 🌍 Test Internet connectivity | `ping 8.8.8.8`                  | Successful replies              |
-| 🔎 Test DNS resolution        | `nslookup networkwalks.com`     | Domain resolves                 |
-| 🧰 Verify Nmap                | `nmap --version`                | Nmap version displayed          |
-| 🔄 Verify snapshot            | Restore snapshot and run `ip a` | Baseline configuration restored |
 
 ### My Shell Console Diagnostics Readout:
 <!-- 
