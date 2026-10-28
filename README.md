@@ -154,7 +154,7 @@ I deployed the host virtualization hypervisor platform to manage local sandbox o
 I initialized a specialized isolated virtual local area network inside the hypervisor environment interface.
 
 *   **Network Name:** `NatNetwork`
-*   **IPv4 Subnet Prefix:** `10.0.0.0/24`
+*   **IPv4 Subnet Prefix:** `10.0.2.0/24`
 *   **DHCP Allocator Engine:** Enabled
 *   **IPv6 Protocol Paths:** Disabled
 
