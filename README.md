@@ -258,37 +258,72 @@ As documented in the step-by-step progress below, I initialized the snapshot req
 
 | ✅ Test | 🧾 Command / Action | 🎯 Live Result Observations |
 | :--- | :--- | :--- |
-| **🌐 Check IP Address** | `ip a` | **SUCCESSFUL** (Correct `10.0.0.2` address profile displayed) |
+| **🌐 Check IP Address** | `ip a` | **SUCCESSFUL** (Correct Kali linux `10.0.0.2` address profile displayed) |
 | **📡 Test Gateway** | `ping 10.0.0.1` | **FAILED** (Returned host unreachable / packets dropped) |
 | **🌍 Test Internet Traffic** | Open Firefox Browser | **SUCCESSFUL** (Successfully accessed and loaded `networkwalks.com`) |
 | **🌍 Test Raw Link IP** | `ping 8.8.8.8` | **FAILED** (Returned host unreachable / packets dropped) |
-| **🔎 Test DNS Resolution** | `nslookup networkwalks.com` | **FAILED** (Command-line name translation timed out) |
-| **🧰 Verify Security Tools** | `nmap --version` | **SUCCESSFUL** (Nmap utility layer version engine displayed) |
+| **🔎 Test DNS Resolution** | `nslookup networkwalks.com` | **FAILED** (communication error to 8.8.8.8#53: host unreachable) |
+| **🧰 Verify Nmap** | `nmap --version` | **SUCCESSFUL** (Nmap utility layer version 7.9 engine displayed) |
 | **🔄 Verify Snapshot State** | Restore VM & run `ip a` | **SUCCESSFUL** (Baseline configuration state restored cleanly) |
 
 
 ### My Shell Console Diagnostics Readout:
-<!-- 
-👉 INSTRUCTION: 
-Run these commands in your live terminal, copy the actual text output from your screen, and paste it inside the code blocks below.
--->
 
 ```bash
 # Diagnostic Run A: Active IP Verification
-ip address show eth0
+ip a
 ```
 ```text
-<!-- PASTE THE EXACT, REAL TEXT OUTPUT FROM YOUR OWN KALI TERMINAL HERE -->
+10.0.0.2
 ```
 
 ```bash
-# Diagnostic Run B: Outbound Data Bridge Audit
-ping -c 4 8.8.8.8
-ping -c 4 google.com
+# Diagnostic Run B: Test Gateway
+ping 10.0.0.1
+
 ```
 ```text
-<!-- PASTE THE REAL PING PRINTOUT FROM YOUR SCREEN HERE SHOWING 0% PACKET LOSS -->
+host unreachable/packet dropped
 ```
+
+
+```bash
+# Diagnostic Run C: Test Raw Link IP
+ping 8.8.8.8
+```
+```text
+host unreachable / packets dropped
+```
+
+
+
+```bash
+# Diagnostic Run D: Test DNS Resolution
+nslookup networkwalks.com
+```
+```text
+communication error to 8.8.8.8#53: host unreachable
+```
+
+
+
+```bash
+# Diagnostic Run E: Verify Nmap
+nmap --version
+```
+```text
+Nmap version 7.9
+```
+
+```bash
+# Diagnostic Run F: Verify Snapshot State
+ip a
+```
+```text
+10.0.0.2
+```
+
+
 
 > 🖼️ **My Verified Diagnostic Terminal Snapshot:**  
 > <!-- Place a screenshot of your live terminal window displaying these successful commands here. -->
