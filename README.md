@@ -491,5 +491,4 @@ LinkedIn: [https://www.linkedin.com/in/anderson-edaiyo-bab74117b)
 | **Code Repository** | Public Deployment Hub via GitHub |
 
 ---
-> 🖼️ **My Host Machine System Specifications Screenshot:**
-![Windows 10 Pro Host Specifications](images/21-host-machine-specifications.png)
+21-host-machine-specifications.png 
