@@ -390,40 +390,7 @@ ip a
     1. Checked the hardware adapter state using `ip a`, which returned a perfectly active and healthy `<UP,LOWER_UP>` status.
     2. Inspected the core system network script layers using `cat /etc/network/interfaces`, verifying that the file was clean and completely uncorrupted.
     3. Audited the local ARP neighbor cache using `ip neigh show`, which flagged the virtual gateway address (`10.0.0.1`) as strictly **`incomplete`**.
-### Problem 2: Persistent Terminal ICMP Packet Drops & Gateway Route Failures
-*   **Operational Anomaly:** After migrating the network adapter card profiles inside the Kali Linux GUI from dynamic tracking to the required manual static deployment layout (`10.0.0.2/24`), all terminal-based connectivity validation checks failed completely. Running `ping -c 4 8.8.8.8` or checking the default gateway via `ping 10.0.0.1` consistently returned `Destination Host Unreachable` or `No route to host` error flags.
-*   **Multi-Layered Diagnostic Discovery:** To track down the exact location of the network bottleneck on my system, I ran a detailed diagnostic pipeline inside the Linux terminal:
-    1. Checked the hardware adapter state using `ip link show eth0`, which returned a perfectly active and healthy `<UP,LOWER_UP>` status.
-    2. Inspected the core system network script layers using `cat /etc/network/interfaces`, verifying that the file was clean and completely uncorrupted.
-    3. Audited the local ARP neighbor cache using `ip neigh show`, which flagged the virtual gateway address (`10.0.0.1`) as strictly **`incomplete`**.
-*   **### Problem 2: Persistent Terminal ICMP Packet Drops & Gateway Route Failures
-*   **Operational Anomaly:** After migrating the network adapter card profiles inside the Kali Linux GUI from dynamic tracking to the required manual static deployment layout (`10.0.0.2/24`), all terminal-based connectivity validation checks failed completely. Running `ping -c 4 8.8.8.8` or checking the default gateway via `ping 10.0.0.1` consistently returned `Destination Host Unreachable` or `No route to host` error flags.
-*   **Multi-Layered Diagnostic Discovery:** To track down the exact location of the network bottleneck on my system, I ran a detailed diagnostic pipeline inside the Linux terminal:
-    1. Checked the hardware adapter state using `ip link show eth0`, which returned a perfectly active and healthy `<UP,LOWER_UP>` status.
-    2. Inspected the core system network script layers using `cat /etc/network/interfaces`, verifying that the file was clean and completely uncorrupted.
-    3. Audited the local ARP neighbor cache using `ip neigh show`, which flagged the virtual gateway address (`10.0.0.1`) as strictly **`incomplete`**.
-*   **Remediation Path (Attempted):** To force the network interface to re-align its routing parameters, I executed the standard curriculum-recommended NetworkManager recycling commands to adjust the Duplicate Address Detection (DAD) constraints and cycle the interface state:
-    ```bash
-    sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
-    sudo nmcli connection down "Wired connection 1"
-    sudo nmcli connection up "Wired connection 1"
-    ```
-    *Note: This remediation path did not resolve the terminal ping issue on my host system, as the interface configuration layers remained isolated from raw command-line ICMP traffic.*
-*   **Definitive Engineering Proof:** Although local host-level security configurations stubbornly blocked raw command-line ICMP (ping) packets from passing the network bridge, the lab setup itself was verified as **100% structurally functional**. This was proven conclusively when I launched the native Firefox browser inside the guest desktop environment and successfully loaded and explored the external `networkwalks.com` website live. The core sandbox network layer successfully handles application-layer (HTTP/HTTPS) data pipelines, and the final project state was preserved perfectly using the VirtualBox snapshot tree tracking mechanics.
-:** To force the network interface to re-align its routing parameters, I executed the standard curriculum-recommended NetworkManager recycling commands to adjust the Duplicate Address Detection (DAD) constraints and cycle the interface state:
-    ```bash
-    sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
-    sudo nmcli connection down "Wired connection 1"
-    sudo nmcli connection up "Wired connection 1"
-    ```
-    *Note: This remediation path did not resolve the terminal ping issue on my host system, as the interface configuration layers remained isolated from raw command-line ICMP traffic.*
 
-### Problem 2: Persistent Terminal ICMP Packet Drops & Gateway Route Failures
-*   **Operational Anomaly:** After migrating the network adapter card profiles inside the Kali Linux GUI from dynamic tracking to the required manual static deployment layout (`10.0.0.2/24`), all terminal-based connectivity validation checks failed completely. Running `ping -c 4 8.8.8.8` or checking the default gateway via `ping 10.0.0.1` consistently returned `Destination Host Unreachable` or `No route to host` error flags.
-*   **Multi-Layered Diagnostic Discovery:** To track down the exact location of the network bottleneck on my system, I ran a detailed diagnostic pipeline inside the Linux terminal:
-    1. Checked the hardware adapter state using `ip link show eth0`, which returned a perfectly active and healthy `<UP,LOWER_UP>` status.
-    2. Inspected the core system network script layers using `cat /etc/network/interfaces`, verifying that the file was clean and completely uncorrupted.
-    3. Audited the local ARP neighbor cache using `ip neigh show`, which flagged the virtual gateway address (`10.0.0.1`) as strictly **`incomplete`**.
 *   **Remediation Path (Attempted):** To force the network interface to re-align its routing parameters, I executed the standard curriculum-recommended NetworkManager recycling commands to adjust the Duplicate Address Detection (DAD) constraints and cycle the interface state:
     ```bash
     sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
