@@ -476,4 +476,5 @@ Cybersecurity Professional B082
 LinkedIn: [https://www.linkedin.com/in/anderson-edaiyo-bab74117b)
 
 ---
-
+📌 Project Information
+Program Name: Cybersecurity at Networkwalks | Week: 01 | Project: Cybersecurity & Pentesting Lab Setup | Repository: GitHub
