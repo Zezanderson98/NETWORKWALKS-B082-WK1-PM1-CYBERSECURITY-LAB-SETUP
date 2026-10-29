@@ -276,6 +276,9 @@ ip a
 ```text
 10.0.0.2
 ```
+<img width="1360" height="662" alt="ip a screenshot" src="https://github.com/user-attachments/assets/9305edd8-66e2-46ba-aaed-1856080d163a" />
+
+
 
 ```bash
 # Diagnostic Run B: Test Gateway
@@ -285,6 +288,7 @@ ping 10.0.0.1
 ```text
 host unreachable/packet dropped
 ```
+<img width="1360" height="662" alt="ping gateway screenshot" src="https://github.com/user-attachments/assets/2465c5ce-3e51-4404-9279-078ccb667231" />
 
 
 ```bash
@@ -294,6 +298,7 @@ ping 8.8.8.8
 ```text
 host unreachable / packets dropped
 ```
+<img width="1360" height="662" alt="ping of the year" src="https://github.com/user-attachments/assets/85af7e79-4a1a-4aa3-b301-bbf7a64cc1e8" />
 
 
 
@@ -305,6 +310,7 @@ nslookup networkwalks.com
 communication error to 8.8.8.8#53: host unreachable
 ```
 
+<img width="1360" height="662" alt="nslookup screenshot" src="https://github.com/user-attachments/assets/fb46d592-fc46-46fd-b573-30fe15690d06" />
 
 
 ```bash
@@ -314,6 +320,9 @@ nmap --version
 ```text
 Nmap version 7.9
 ```
+
+<img width="1360" height="662" alt="nmap version screenshot" src="https://github.com/user-attachments/assets/274a5ab0-4b74-4fb1-a11a-c13463c60202" />
+
 
 ```bash
 # Diagnostic Run F: Verify Snapshot State
@@ -325,8 +334,6 @@ ip a
 
 
 
-> 🖼️ **My Verified Diagnostic Terminal Snapshot:**  
-> <!-- Place a screenshot of your live terminal window displaying these successful commands here. -->
 
 ---
 
