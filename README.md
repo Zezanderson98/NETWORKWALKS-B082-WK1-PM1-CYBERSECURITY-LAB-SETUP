@@ -69,11 +69,14 @@ It can be used for activities such as:
 
 ---
 
+
 ## 🏗️ Lab Architecture
 
+<img width="1283" height="724" alt="3 layer" src="https://github.com/user-attachments/assets/399a7c84-5907-4097-867e-d1428457293b" />
+<img width="1279" height="720" alt="2 layer" src="https://github.com/user-attachments/assets/374b2c34-d3eb-4108-b5f1-0581694cccb7" />
+<img width="1279" height="727" alt="1 layer" src="https://github.com/user-attachments/assets/9695147f-c8bb-4724-9cbb-a1a9fcd57e3b" />
 
 
-Additional target machines can be added to the same virtual network in future projects.
 
 ---
 
@@ -83,7 +86,8 @@ Additional target machines can be added to the same virtual network in future pr
 | ------------------ | ------------------  |
 | 🖥️ Host OS         | Windows 10 Pro         |
 | 🧠 Host RAM        | 8 GB               |
-| ⚡ Processor       | Intel(R) Pentium(R)      |
+| ⚡ Processor       | Intel(R) Pentium(R) CPU N3540 @ 2.16GHz 2.16GHz
+      |
 | 🧰 Hypervisor      | VirtualBox 7.2  |
 | 🐉 Security OS     | Kali Linux 2026.2  |
 | 🧠 Kali RAM        | 2048 MB            |
@@ -98,32 +102,6 @@ Additional target machines can be added to the same virtual network in future pr
 
 
 
-## 📌 Project Overview
-
-This project focuses on setting up a **virtual cybersecurity and penetration-testing laboratory** using VirtualBox and Kali Linux.
-
-The purpose of the lab is to create a controlled environment where cybersecurity tools, network scanning, reconnaissance, vulnerability assessment, and other security-testing activities can be performed safely and repeatedly.
-
-The lab is configured on a private virtual network so that additional machines can be added later and used as targets for authorized security testing.
-
----
-
-## 🎯 Objectives
-
-The main objectives of this project are to:
-- Install required system dependencies and hypervisor layers.
-- Create a private **NAT Network** for the cybersecurity lab.
-- Install and configure a Kali Linux virtual machine.
-- Set up a consistent, manual IP address configuration.
-- Verify end-to-end network connectivity and internet reachability.
-- Capture a baseline system state snapshot for recovery.
-
----
-
-## 🏗️ Lab Architecture
-
-📸 **My Architecture Blueprint:**  
-<!-- Insert your personal screen capture of the network diagram layout here. Keep your file path clean, e.g., ![](images/my_network_diagram.png) -->
 
 ---
 
