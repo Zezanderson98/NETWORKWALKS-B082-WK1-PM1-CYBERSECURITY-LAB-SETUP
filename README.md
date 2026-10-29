@@ -263,7 +263,7 @@ As documented in the step-by-step progress below, I initialized the snapshot req
 | **🌍 Test Internet Traffic** | Open Firefox Browser | **SUCCESSFUL** (Successfully accessed and loaded `networkwalks.com`) |
 | **🌍 Test Raw Link IP** | `ping 8.8.8.8` | **FAILED** (Returned host unreachable / packets dropped) |
 | **🔎 Test DNS Resolution** | `nslookup networkwalks.com` | **FAILED** (communication error to 8.8.8.8#53: host unreachable) |
-| **🧰 Verify Nmap** | `nmap --version` | **SUCCESSFUL** (Nmap utility layer version 7.9 engine displayed) |
+| **🧰 Verify Nmap** | `nmap --version` | **SUCCESSFUL** (Nmap utility layer version 7.99 engine displayed) |
 | **🔄 Verify Snapshot State** | Restore VM & run `ip a` | **SUCCESSFUL** (Baseline configuration state restored cleanly) |
 
 
@@ -318,7 +318,7 @@ communication error to 8.8.8.8#53: host unreachable
 nmap --version
 ```
 ```text
-Nmap version 7.9
+Nmap version 7.99
 ```
 
 <img width="1360" height="662" alt="nmap version screenshot" src="https://github.com/user-attachments/assets/274a5ab0-4b74-4fb1-a11a-c13463c60202" />
