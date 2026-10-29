@@ -324,6 +324,23 @@ Nmap version 7.99
 <img width="1360" height="662" alt="nmap version screenshot" src="https://github.com/user-attachments/assets/274a5ab0-4b74-4fb1-a11a-c13463c60202" />
 
 
+### 🔄 Snapshot Integrity & Recovery Audit
+
+To validate the operational reliability of my baseline state snapshot, I simulated a severe network interface configuration failure by manually purging the static IP allocations from the active network card profile within the guest terminal. 
+
+I then performed a clean shutdown of the instance, accessed the VirtualBox Snapshot Management console interface, selected the `Clean Kali - Network Setup` tree node, and executed a hardware rollback operation. Upon a fresh reboot cycle, running `ip a` confirmed that the entire local system configuration matrix was successfully restored to the target baseline state with zero configuration loss.
+
+```bash
+sudo ip addr del 10.0.0.2/24 dev eth0
+
+```
+<img width="1360" height="662" alt="delete it" src="https://github.com/user-attachments/assets/d1e044df-5634-477a-9709-323ef2d4be66" />
+
+**Executing hardware rollback**
+<img width="1366" height="768" alt="restore back" src="https://github.com/user-attachments/assets/d5bc9aa1-227d-42c8-a3e1-210d694362bf" />
+
+
+
 ```bash
 # Diagnostic Run F: Verify Snapshot State
 ip a
@@ -332,6 +349,7 @@ ip a
 10.0.0.2
 ```
 
+<img width="1360" height="662" alt="snapshot restored" src="https://github.com/user-attachments/assets/1cb783ca-2ece-4f00-b9f0-20f05046d426" />
 
 
 
