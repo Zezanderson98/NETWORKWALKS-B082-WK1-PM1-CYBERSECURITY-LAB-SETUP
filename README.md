@@ -491,3 +491,99 @@ LinkedIn: [https://www.linkedin.com/in/anderson-edaiyo-bab74117b)
 | **Code Repository** | Public Deployment Hub via GitHub |
 
 ---
+<div align="center">
+  <!-- PRIMARY BLUE CANVAS MARGIN CONTAINER -->
+  <table width="100%" cellspacing="0" cellpadding="20" style="border: 3px solid #00A6C7; background-color: #ffffff; border-radius: 4px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+    <tr>
+      
+      <!-- LEFT COLUMN PANEL: PHYSICAL HOST NODES WITH LIVE HARDWARE SPECIFICATIONS SCREENSHOT -->
+      <td width="30%" valign="top" align="left" style="font-family: inherit; color: #1e293b; padding-right: 15px;">
+        <h2 style="color: #00A6C7; font-size: 1.5rem; margin-top: 0; font-weight: 700; line-height: 1.2;">
+          Main OS<br><span style="font-size: 1.2rem; font-weight: 500;">(Windows 10)</span>
+        </h2>
+        
+        <!-- IMAGE 1: HOST LOCAL NETWORK INTERFACE MATRIX SCREENSHOT -->
+        <table border="0" cellspacing="0" cellpadding="0" style="border: 1px solid #cbd5e1; border-radius: 2px; overflow: hidden; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+          <tr>
+            <td>
+              <img src="images/23-failed-network-manager-icmp-remediation.png" width="100%" style="display: block;" alt="MTN Host Network Connection Properties">
+            </td>
+          </tr>
+        </table>
+        <p style="font-family: monospace; font-size: 1.05rem; font-weight: bold; color: #00A6C7; margin-top: 0; margin-bottom: 25px;">
+          IP: 192.168.0.2
+        </p>
+        
+        <!-- IMAGE 2: HOST HARDWARE SYSTEM DEVICE CONFIGURATION SCREENSHOT -->
+        <table border="0" cellspacing="0" cellpadding="0" style="border: 1px solid #cbd5e1; border-radius: 2px; overflow: hidden; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+          <tr>
+            <td>
+              <img src="images/21-windows-features-hypervisor-disabled.png" width="100%" style="display: block;" alt="Windows 10 Hardware System Specifications">
+            </td>
+          </tr>
+        </table>
+        
+        <p style="font-size: 0.8rem; color: #64748b; font-style: italic; line-height: 1.3; margin-bottom: 5px;">
+          PC/Laptop specs for this lab setup<br>(recommended but not a must)
+        </p>
+        <p style="font-size: 0.85rem; color: #475569; line-height: 1.5; font-weight: 500;">
+          • 8GB RAM or more<br>
+          • 256GB SSD or more<br>
+          • Intel Pentium Processor (or similar)
+        </p>
+      </td>
+
+      <!-- RIGHT COLUMN PANEL: ORANGE VIRTUALBOX ROUTING FABRIC ENVELOPE -->
+      <td width="70%" valign="top" style="border: 2px solid #F59E0B; border-radius: 4px; background-color: #ffffff; padding: 20px;">
+        
+        <!-- VIRTUALBOX TOP LOGO LAYOUT LINE ROW -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td valign="top" align="left">
+              <h1 style="color: #0070C0; font-size: 2.2rem; margin: 0; font-weight: 800; font-family: inherit;">
+                VirtualBox
+              </h1>
+            </td>
+            <td valign="top" align="right" style="font-family: inherit; font-size: 0.85rem; color: #334155; line-height: 1.4;">
+              <span style="color: #0070C0; font-weight: bold;">Network Settings on all VM's:</span><br>
+              <span style="color: #238F89; font-weight: bold;">NATNetwork (custom)</span><br>
+              <span style="color: #F59E0B; font-weight: bold;">Range: 10.0.0.2-99 /24</span>
+            </td>
+          </tr>
+        </table>
+
+        <!-- CENTRAL BLADE: PRIMARY GUEST ATTACKER WORKSPACE NODE WITH LIVE SCREENSHOT -->
+        <div align="center" style="margin-top: 25px; margin-bottom: 20px;">
+          <!-- IMAGE 3: KALI LINUX WIRED STATIC NETWORK CONNECTION PANEL SCREENSHOT -->
+          <table border="0" cellspacing="0" cellpadding="0" style="border: 2px solid #475569; border-radius: 2px; overflow: hidden; max-width: 520px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+            <tr>
+              <td>
+                <img src="images/08-kali-static-ip-gui-configuration.png" width="520" style="display: block;" alt="Kali Linux Active Static IPv4 Wired Interface Setup">
+              </td>
+            </tr>
+          </table>
+          <p style="font-family: inherit; font-size: 0.95rem; color: #1e293b; margin-top: 10px; font-weight: 500;">
+            Manual IP: <span style="color: #16a34a; font-weight: bold;">10.0.0.2</span>/24 (NATNetwork)
+          </p>
+        </div>
+
+        <!-- LOWER SUB-SEGMENT CONDUIT: RE-ARRANGED WINDOWS 10 ENDPOINT BASELINE TARGET -->
+        <hr style="border: 0; border-top: 1px dashed #cbd5e1; margin: 20px 0;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center" valign="bottom" width="100%">
+              <p style="font-family: inherit; font-size: 0.85rem; color: #1e293b; margin-bottom: 8px; font-weight: 500;">
+                Manual IP: <span style="color: #16a34a; font-weight: bold;">10.0.0.10</span> /24<br>
+                <span style="color: #64748b; font-size: 0.75rem;">(NATNetwork)</span>
+              </p>
+              <h4 style="font-family: inherit; color: #0070C0; font-size: 1.1rem; margin-top: 4px; margin-bottom: 0; font-weight: 700;">
+                Windows 10 Target VM
+              </h4>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+</div>
