@@ -468,4 +468,3 @@ LinkedIn: [https://www.linkedin.com/in/anderson-edaiyo-bab74117b)
 | **Code Repository** | Public Deployment Hub via GitHub |
 
 ---
-21-host-machine-specifications.png 
