@@ -84,10 +84,10 @@ It can be used for activities such as:
 
 | 🧩 Component       | ⚙️ Configuration   |
 | ------------------ | ------------------  |
-| 🖥️ Host OS         | Windows 10 Pro         |
+| 🖥️ Host OS         | Windows 10 Pro     |
 | 🧠 Host RAM        | 8 GB               |
-| ⚡ Processor       | Intel(R) Pentium(R) CPU N3540 @ 2.16GHz 2.16GHz
-      |
+| ⚡ Processor       | Intel(R) Pentium(R) 
+|                     |CPU N3540 @ 2.16GHz 2.16GHz
 | 🧰 Hypervisor      | VirtualBox 7.2  |
 | 🐉 Security OS     | Kali Linux 2026.2  |
 | 🧠 Kali RAM        | 2048 MB            |
