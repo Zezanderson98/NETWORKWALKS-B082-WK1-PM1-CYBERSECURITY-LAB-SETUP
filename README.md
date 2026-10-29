@@ -470,7 +470,7 @@ This laboratory is intended strictly for education purposes only.
 
 # 👤 Author
 
-**Anderson Edaiyo**\
+**Anderson Edaiyo Uzezi**\
 Cybersecurity Professional B082
 
 LinkedIn: [https://www.linkedin.com/in/anderson-edaiyo-bab74117b)
