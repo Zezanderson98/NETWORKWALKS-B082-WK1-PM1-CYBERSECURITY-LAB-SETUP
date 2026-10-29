@@ -476,5 +476,18 @@ Cybersecurity Professional B082
 LinkedIn: [https://www.linkedin.com/in/anderson-edaiyo-bab74117b)
 
 ---
-📌 Project Information
-Program Name: Cybersecurity at Networkwalks | Week: 01 | Project: Cybersecurity & Pentesting Lab Setup | Repository: GitHub
+# 📊 Project Information Matrix
+
+> [!NOTE]
+> This repository contains the complete documentation, environment blueprints, and live verification logs for my Week 01 specialized laboratory deployment.
+
+| 🗂️ Project Parameter | ⚙️ Live Deployment Data |
+| :--- | :--- |
+| **Program Track** | Cybersecurity with Ethical Hacking |
+| **Academy Module** | Networkwalks Academy Portfolio Matrix |
+| **Timeline Horizon** | Week 01 Engineering Core |
+| **Project Identity** | Cybersecurity & Pentesting Lab Environment Setup |
+| **Target Task ID** | TASK WK1-PM1 |
+| **Code Repository** | Public Deployment Hub via GitHub |
+
+---
